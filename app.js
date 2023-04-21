@@ -33,9 +33,10 @@ var createNewTaskElement = function (taskString) {
   label.className = "task";
 
   //Each elements, needs appending
-  listItem.className = "list-el";
+  listItem.className = "list-el edit-mode";
   label.className = "label-task";
   checkBox.className = "input-checkbox";
+  editInput.className = "input-text";
   checkBox.type = "checkbox";
   editInput.type = "text";
   editInput.className = "input-text task";
@@ -44,6 +45,7 @@ var createNewTaskElement = function (taskString) {
   editButton.className = "press-button edit";
 
   deleteButton.className = "press-button delete";
+  deleteButtonImg.className = "remove-img";
   deleteButtonImg.src = "./remove.svg";
   deleteButton.appendChild(deleteButtonImg);
 
