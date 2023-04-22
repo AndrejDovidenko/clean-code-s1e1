@@ -5,22 +5,23 @@
   font-family: Lato, sans-serif;
 }
 
-.main {
+.reference {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.main img {
+.reference img {
   width: 100%;
 }
-.main .more-inf {
+
+.reference .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .main {
+  .reference {
     text-align: center;
   }
 }
@@ -37,8 +38,9 @@
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.new-task-wrapper {
   display: flex;
+  margin: 20px 0 10px 0;
 }
 
 ul {
@@ -71,8 +73,8 @@ button {
 }
 
 /* Heading */
-.caption,
-.new-task {
+/* .new-task */
+.caption {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -102,7 +104,7 @@ button {
 /* New Task */
 .new-task {
   display: block;
-  margin: 0 0 20px;
+  /* margin: 0 0 20px; */
 }
 
 .task#new-task {
