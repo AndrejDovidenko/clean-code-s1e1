@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.reference img {
+.reference__img {
   width: 100%;
 }
 
-.reference .more-inf {
+.reference__more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -33,12 +33,10 @@
 }
 
 .task {
-  width: 56%;
-  display: inline-block;
   flex-grow: 1;
 }
 
-.new-task-wrapper {
+.new-task {
   display: flex;
   margin: 20px 0 10px 0;
 }
@@ -58,7 +56,7 @@ button {
   outline: none;
 }
 
-.press-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -68,12 +66,11 @@ button {
   cursor: pointer;
 }
 
-.press-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-/* .new-task */
 .caption {
   color: #333;
   font-weight: 700;
@@ -101,72 +98,60 @@ button {
   color: #333;
 }
 
-/* New Task */
-.new-task {
-  display: block;
-  /* margin: 0 0 20px; */
-}
-
-.task#new-task {
-  width: 318px;
-}
-
-/* Task list */
-.list-el {
+.list__el {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.list-el > * {
+.list__el > * {
   vertical-align: middle;
 }
 
-.list-el > .input-checkbox {
+.list__input-checkbox {
   margin: 0 10px;
 }
 
-.list-el > .label-task {
+.list__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-el > .input-text {
+.list__input-text {
   width: 226px;
 }
 
-.press-button.delete .remove-img {
+.button__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.press-button.delete .remove-img:hover {
+.button__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.list#completed-tasks .label-task {
+.list_complete .list__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list .list-el .input-text {
+.list__input-text {
   display: none;
 }
 
-.list .list-el.edit-mode .input-text {
+.edit-mode > .list__input-text {
   display: inline-block;
   width: 224px;
 }
 
-.list .list-el.edit-mode .label-task {
+.edit-mode > .list__label {
   display: none;
 }
